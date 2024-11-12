@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css"/>
+</head>
+<body>
+    <section class="contact">
+        <h1>Contact Us!</h1>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Enter Full Name</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email" id="email"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Enter Email Adress</div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Phone Number" id="phone"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Enter Phone Number</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Enter Subject</div>
+                </div>
+            </div>
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" 
+                placeholder="Message" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Enter Message</div>
+            </div>
+
+            <button type="submit">Send Message</button>
+
+            <div class="success-message" id="successMessage">
+                    
+                <h2>The message has been sent successfully!</h2>
+                <p>Expect a response within the day</p>
+                <div class="success-icon"><img src="./images/success.png" alt="logo" height="100px" width="100px"/></div> 
+                <button id="close">OK</button>
+              </div>
+        </form>
+    </section>
+
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

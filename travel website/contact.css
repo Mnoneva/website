@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("./images/contact.jpg");
+    background-position: top;
+    background-size: cover;
+}
+.contact{
+    margin: auto;
+    border-radius: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 40px;
+}
+.contact h1{
+    font-size: 3rem;
+    color: #0E2954;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact form{
+    width: 600px;
+    text-align: center;
+}
+
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field{
+   width: 48.5%;
+}
+.field .item{
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 1px solid #0E2954;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #0E2954;
+    margin: 10px 0;
+}
+
+.field .error-txt{
+    font-size: 1rem;
+    color: #0E2954;
+    text-align: left;
+    margin: -5px 0 10px ;
+    display: none;
+}
+
+.field.error .error-txt{
+    display: block;
+}
+
+form .textarea-field .item{
+    resize: none;
+}
+
+form .textarea-field .error-txt{
+    margin-top: -10px;
+}
+
+form button{
+    padding: 12px 32px;
+    background: #0E2954;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#successMessage {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #F6F1F1;
+    text-align: center;
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+
+.success-message h2 {
+    color: #0E2954; 
+    margin: 0 0 10px; 
+}
+
+.success-message p {
+    color: #0E2954; 
+    font-size: 16px; 
+}
+
+.success-message .success-icon img {
+    margin-top: 20px; 
+    width: 100px;     
+    height: 100px;    
+}
